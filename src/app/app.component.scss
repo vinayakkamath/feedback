@@ -1,0 +1,27 @@
+.wrapper{
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  h2{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .feedback-form{
+    float: left;
+    height: auto;
+    .btn-primary{
+      width: 100%;
+    }
+  }
+  .feedback-results{
+    float: left;
+    height: auto;
+    .no-data-found{
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}

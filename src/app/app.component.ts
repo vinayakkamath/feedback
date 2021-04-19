@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'feedback-app';
+  arr = [];
+  errorCheck = false;
+  getFeedback(formData){
+    if(formData.feedback !== '' && formData.username !== ''){
+      this.errorCheck = false;
+      formData.date = new Date();
+      this.arr.push(formData);
+    } else {
+      this.errorCheck = true;
+    }
+    return this.arr;
+  }
 }
